@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import './newwidget.dart';
 void main() {
   runApp(JazzWorld());
 }
@@ -12,10 +11,10 @@ class JazzWorld extends StatelessWidget {
       home:        Scaffold(
         appBar:  AppBar(
           backgroundColor: Colors.red[800],
-          leading: IconButton(onPressed: null, icon: Icon(Icons.notifications_none, color: Colors.white,),
+          leading: const IconButton(onPressed: null, icon: Icon(Icons.notifications_none, color: Colors.white,),
           ),
 
-          title: Row(children:[
+          title: Row(children:const [
             Expanded(child: IconButton(
               padding: EdgeInsets.only(right: 350),
               onPressed: null, icon: Icon(Icons.card_giftcard, color: Colors.white,),
@@ -26,7 +25,7 @@ class JazzWorld extends StatelessWidget {
 
           ],
           ),
-          actions: [
+          actions: const [
             IconButton(
               padding: EdgeInsets.only(left: 30),
               onPressed: null, icon: Icon(Icons.refresh, color: Colors.white,),
