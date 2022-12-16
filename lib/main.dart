@@ -15,27 +15,28 @@ class JazzWorld extends StatelessWidget {
 
           title: Row(children:const [
             Expanded(child: IconButton(
-              padding: EdgeInsets.only(right: 20),
+              padding: EdgeInsets.only(right: 30,),
               onPressed: null, icon: Icon(Icons.notifications_none, color: Colors.white,),
             ),
 
             ),
             IconButton(
-              padding: EdgeInsets.only(right: 40),
+              padding: EdgeInsets.only(right:80),
               onPressed: null, icon: Icon(Icons.card_giftcard, color: Colors.white,),
             ),
             Text('Jazz World' ,
-              style: TextStyle(fontSize: 22,),  ),
+              style: TextStyle(fontSize: 20,),  ),
 
           ],
           ),
           //  leading: const IconButton(onPressed: null, icon: Icon(Icons.notifications_none, color: Colors.white,),
           // padding: EdgeInsets.only(left: 0), ),
           actions: const [
-            IconButton(
+            IconButton(padding: EdgeInsets.only(left: 20),
               onPressed: null, icon: Icon(Icons.refresh, color: Colors.white,),
             ),
-            IconButton(onPressed: null, icon: Icon(Icons.search, color: Colors.white,),
+            IconButton(padding: EdgeInsets.only(left: 10),
+              onPressed: null, icon: Icon(Icons.search, color: Colors.white,),
             ),
             IconButton(onPressed: null, icon: Icon(Icons.menu, color: Colors.white,),
             ),
