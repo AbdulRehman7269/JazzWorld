@@ -271,29 +271,6 @@ PackageWidget(),
                 color: Colors.grey[300],
 
               ),
-
-             Container(
-               width: 280,
-               height: 206,
-               color: Colors.black,
-               child: Row(
-                 mainAxisAlignment: MainAxisAlignment.center,
-                 children: [
-                   Container(
-                     height: 186,
-                     width: 140,
-                     color: Colors.green,
-                     child: Image.asset('assets/images/1221.jpeg'),
-                   ),
-                   Container(
-                     height: 186,
-                     width: 120,
-                     color: Colors.red,
-                   )
-                 ],
-               ),
-             ),
-
               Divider(
                 height: 0,
                 endIndent: 0,
