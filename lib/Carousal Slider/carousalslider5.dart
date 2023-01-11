@@ -5,24 +5,27 @@ class CarousalSliderFive extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CarouselSlider(
-      options: CarouselOptions(
-        aspectRatio: 2.35,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/21.jpeg',height: 170, width: 170,)),
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/22.jpeg',height: 170, width: 170,)),
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/23.jpeg',height: 170, width: 170,)),
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/24.jpeg',height: 170, width: 170,)),
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/21.jpeg',height: 170, width: 170,)),
+        ],
       ),
-      items: [21, 22, 23, 24].map((i) {
-        return Builder(
-          builder: (BuildContext context) {
-            return Container(
-              // width: 2000,
-              // height: 1000,
-              margin: EdgeInsets.only(right: 4, bottom: 15, left: 4),
-              child:
-              Image.asset('assets/images/$i.jpeg', height: 1000, width: 1000,),
-
-            );
-          },
-        );
-      }).toList(),
     );
   }
 }

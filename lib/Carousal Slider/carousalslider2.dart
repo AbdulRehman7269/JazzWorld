@@ -15,7 +15,7 @@ class CarousalSliderTwo extends StatelessWidget {
         return Builder(
           builder: (BuildContext context) {
             return Container(
-              margin: EdgeInsets.all(10),
+              margin: EdgeInsets.only(bottom: 20,top: 10,right: 10,left: 10),
               child:
               Image.asset('assets/images/$i.jpeg'),
 

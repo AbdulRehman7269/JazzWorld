@@ -6,6 +6,7 @@ import 'package:jazzworld/Carousal%20Slider/carousalslider4.dart';
 import 'package:jazzworld/Carousal%20Slider/carousalslider5.dart';
 import 'package:jazzworld/Widgets/boxweidget2.dart';
 import 'package:jazzworld/Widgets/boxwidget.dart';
+import 'package:jazzworld/Widgets/islamwidget.dart';
 import 'package:jazzworld/Widgets/packagewidget.dart';
 import './fractional.dart';
 import './Widgets/usagewidget.dart';
@@ -138,14 +139,17 @@ class _JazzWorldState extends State<JazzWorld> {
               ),
 PackageWidget(),
              CarousalSliderOne(),
-              Divider(
-                height: 0,
-                endIndent: 0,
-                indent: 0,
+              Container(
+                margin: EdgeInsets.only(top: 25),
+                child: Divider(
+                  height: 0,
+                  endIndent: 0,
+                  indent: 0,
 
-                thickness: 10,
-                color: Colors.grey[300],
+                  thickness: 10,
+                  color: Colors.grey[300],
 
+                ),
               ),
             CarousalSliderTwo(),
               Divider(
@@ -279,6 +283,38 @@ PackageWidget(),
                 color: Colors.grey[300],
 
               ),
+              Container(
+                margin: const EdgeInsets.only(top: 10),
+                height: 30,
+                width: 400,
+                // color: Colors.blue,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'ISLAM',
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(left: 275),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                            'View more',
+                            style:
+                            TextStyle(fontSize: 15, color: Colors.red[800]),
+                          )
+                        ],
+                      ),
+                    ),
+
+
+                  ],
+                ),
+              ),
+              IslamWidget(),
+
             ],
           ),
         ),

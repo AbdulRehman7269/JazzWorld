@@ -5,25 +5,27 @@ class CarousalSliderThree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CarouselSlider(
-      options: CarouselOptions(
-        height: 100,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/11.jpeg',height: 170, width: 170,)),
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/12.jpeg',height: 170, width: 170,)),
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/13.jpeg',height: 170, width: 170,)),
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/14.jpeg',height: 170, width: 170,)),
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/15.jpeg',height: 170, width: 170,)),
+        ],
       ),
-      items: [11,12,13,14,15,11,12,13,14,15].map((i) {
-        return Builder(
-          builder: (BuildContext context) {
-            return Container(
-              // width: 2000,
-              // height: 1000,
-              margin: EdgeInsets.only(right: 0,bottom: 15,left: 0),
-              child:
-              Image.asset('assets/images/$i.jpeg',height: 200,width: 200,),
-              width: 200,
-              height: 200,
-            );
-          },
-        );
-      }).toList(),
     );
   }
 }

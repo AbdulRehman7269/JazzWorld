@@ -5,24 +5,28 @@ class CarousalSliderFour extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CarouselSlider(
-      options: CarouselOptions(
-        aspectRatio: 2.35,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+              children: [
+          Container(
+              margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+              child: Image.asset('assets/images/16.jpeg',height: 170, width: 170,)),
+                Container(
+                    margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+                    child: Image.asset('assets/images/17.jpeg',height: 170, width: 170,)),
+                Container(
+                    margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+                    child: Image.asset('assets/images/18.jpeg',height: 170, width: 170,)),
+                Container(
+                    margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+                    child: Image.asset('assets/images/19.jpeg',height: 170, width: 170,)),
+                Container(
+                    margin: EdgeInsets.only(right: 5, left: 10,bottom: 20),
+                    child: Image.asset('assets/images/20.jpeg',height: 170, width: 170,)),
+        ],
       ),
-      items: [16,17,18,19,20].map((i) {
-        return Builder(
-          builder: (BuildContext context) {
-            return Container(
-              // width: 2000,
-              // height: 1000,
-              margin: EdgeInsets.only(right: 4,bottom: 15,left: 4),
-              child:
-              Image.asset('assets/images/$i.jpeg',height: 1000,width: 1000,),
-
-            );
-          },
-        );
-      }).toList(),
     );
+
   }
 }
