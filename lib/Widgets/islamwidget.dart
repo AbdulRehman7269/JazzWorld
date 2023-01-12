@@ -48,7 +48,7 @@ class IslamWidget extends StatelessWidget {
           ],
         ),
         Container(
-          margin: EdgeInsets.only(bottom: 50),
+          margin: EdgeInsets.only(bottom: 20),
           child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text('Qibla Direction'),

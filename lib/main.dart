@@ -314,8 +314,114 @@ PackageWidget(),
                 ),
               ),
               IslamWidget(),
+              Divider(
+                height: 0,
+                endIndent: 0,
+                indent: 0,
+                thickness: 10,
+                color: Colors.grey[300],
+
+              ),
 
             ],
+          ),
+        ),
+        bottomNavigationBar: BottomAppBar(
+          color: Colors.black54,
+          shape: CircularNotchedRectangle(),
+          notchMargin: 10,
+          child: Container(
+            height: 60,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    MaterialButton(
+                        minWidth: 40,
+                        onPressed:() {
+                          setState(() {
+
+                          });
+                        },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.home,color: Colors.red,),
+                          Text('Home',style: TextStyle(color: Colors.white),),
+                        ],
+                      ),
+
+                    ),
+                    MaterialButton(
+                      minWidth: 40,
+                      onPressed:() {
+                        setState(() {
+
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.sports_volleyball_outlined,color: Colors.red,),
+                          Text('My World',style: TextStyle(color: Colors.white),),
+                        ],
+                      ),
+
+                    ),
+                    MaterialButton(
+                      minWidth: 40,
+                      onPressed:() {
+                        setState(() {
+
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.library_music_outlined,color: Colors.red,),
+                          Text('Bajao',style: TextStyle(color: Colors.white),),
+                        ],
+                      ),
+
+                    ),
+                    MaterialButton(
+                      minWidth: 40,
+                      onPressed:() {
+                        setState(() {
+
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.workspaces_outlined,color: Colors.red,),
+                          Text('Tamasha',style: TextStyle(color: Colors.white),),
+                        ],
+                      ),
+
+                    ),
+                    MaterialButton(
+                      minWidth: 40,
+                      onPressed:() {
+                        setState(() {
+
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.mosque_outlined,color: Colors.red,),
+                          Text('Islam',style: TextStyle(color: Colors.white),),
+                        ],
+                      ),
+
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),

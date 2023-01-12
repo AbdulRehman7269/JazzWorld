@@ -5,7 +5,7 @@ class PackageFive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      margin: EdgeInsets.only(left: 10),
+      margin: EdgeInsets.only(right: 10,left: 10),
 
       child: Card(
         elevation: 5,
